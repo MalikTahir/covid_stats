@@ -29,10 +29,6 @@ function Flag(){
     function elementClicked(name){
      
             setRegion(name);
-            // console.log(countryStats)
-            // //  setCountryStats("https://corona.lmao.ninja/v2/historical/"+region)  
-            //  console.log(countryStats)    
-        
     }  
     //function to get data from api
      async function fun()
