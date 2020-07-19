@@ -30,12 +30,9 @@ export default function FullWidthGrid() {
   
   
   // getting data from fetch api component
-  const [globalStats,setGlobalStats] = useState([{}])
   async function fun()
   {
     const data =await Stats();
-  setGlobalStats(data);
-  const data2 = await data.countryInfo;
   }
   fun()
 

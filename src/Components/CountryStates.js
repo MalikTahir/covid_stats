@@ -1,6 +1,5 @@
 import React, { useState, useContext } from 'react'
 import Stats from './Fetch_API'
-import Test from './Test'
 import Paper from '@material-ui/core/Paper';
 import stateContext from './stateContext';
 
@@ -24,10 +23,9 @@ const useStyles = makeStyles((theme) => ({
 
 function Country(){
     const classes = useStyles();
-    let {region,setRegion} = useContext(stateContext)
+    let {region} = useContext(stateContext)
     
-    var index = -1
-    let stateIndex1=0;
+    
     
     const [states,setStates] = useState([{}])
     const [stateIndex,setStateIndex] = useState(0)
