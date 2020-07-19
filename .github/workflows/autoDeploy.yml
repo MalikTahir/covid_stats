@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
-name: PIAIC Bootcamp Class_4(Eng) workflow
+name: Covid stats Project workflow
 
 # Controls when the action will run. Triggers the workflow on push or pull request
 # events but only for the master branch
@@ -45,5 +45,5 @@ jobs:
     - name: creating build
       run: npm run build
     - name: deploying on surge
-      run: surge --project ./build --domain http://covid_live.com/ --token ${{secrets.COVID_TOKEN}}
+      run: surge --project ./build --domain http://covid-live.surge.sh/ --token ${{secrets.COVID_TOKEN}}
       
